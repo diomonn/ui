@@ -1,0 +1,98 @@
+@import url(./index.css);
+@import url(./index1.css);
+.main {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 4fr;
+}
+
+.one {
+    text-align: center;
+    position: relative;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    left: 50%;
+    width: 80%;
+    height: 6.25rem;
+    animation-name: example;
+    animation-duration: 4s;
+    transition: linear;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../images/down.gif);
+}
+
+@keyframes example {
+    0% {
+        width: 100%;
+        height: 700%;
+    }
+    50% {
+        width: 100%;
+        height: 400%;
+    }
+    100% {
+        width: 80%;
+        height: 6.25rem;
+    }
+}
+
+@media screen and (375px<=width<=765px) {
+    .two {
+        overflow-y: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+.one li:hover {
+    color: brown;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.two div {
+    color: aqua;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+    width: 12.5rem;
+    height: 18.75rem;
+    margin-left: 2rem;
+    transition: .4s linear all;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.two div:hover {
+    text-shadow: 1px 0px 1px rgb(0, 0, 0);
+}
+
+.two div:hover {
+    transform: translateY(-20%);
+}
+
+.Basketball {
+    background-image: url(../images/f1.jpg);
+    margin-top: 11rem;
+}
+
+.Rap {
+    background-image: url(../images/f2.jpg);
+    margin-top: 7rem;
+}
+
+.Dance {
+    background-image: url(../images/f3.jpg);
+    margin-top: 5rem;
+}

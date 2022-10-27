@@ -1,0 +1,122 @@
+@import url('./index.css');
+@import url('./index1.css');
+.main {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-image: url('../images/wanli.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 3.125rem 6.25rem;
+}
+
+.main div {
+    transition: .4 all linear;
+}
+
+.main div img {
+    display: none;
+    width: 6.25rem;
+    height: 5.25rem;
+    position: relative;
+    top: -100px;
+    right: .625rem;
+}
+
+.main .a:hover img,
+.main .b:hover img,
+.main .c:hover img,
+.main .d:hover img,
+.main .e:hover img {
+    display: block;
+}
+
+.a {
+    position: relative;
+    top: 100px;
+    right: 20.625rem;
+    background: #000;
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+}
+
+.b {
+    position: relative;
+    top: 11.875rem;
+    right: 11.25rem;
+    background: rgb(226, 21, 21);
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+}
+
+.c {
+    position: relative;
+    top: 135px;
+    right: -4px;
+    background: #000;
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+}
+
+.d {
+    position: relative;
+    top: 325px;
+    right: -170px;
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+    background: #000;
+}
+
+.e {
+    position: relative;
+    top: 243px;
+    right: -300px;
+    background: #000;
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+}
+
+.litte {
+    display: none;
+}
+
+@media screen and (370px<=width<=800px) {
+    .main {
+        background-image: none;
+    }
+    .main div {
+        margin-top: 3.125rem;
+        width: 100%;
+        height: 26.25rem;
+    }
+    .main div img {
+        display: block;
+        width: 100%;
+        height: 80%;
+    }
+    .a,
+    .b,
+    .c,
+    .d,
+    .e {
+        display: none;
+    }
+    .litte {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .litte div {
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

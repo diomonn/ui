@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./html/css/Vlog.css">
+    <title>VLOG</title>
+</head>
+
+<body>
+    <div class="left">
+        <button>Home</button>
+        <button>Vlog</button>
+        <button>Books</button>
+        <button>ui</button>
+        <button>Contactme</button>
+        <button>experience</button>
+        <button>Hoppy</button>
+        <button>wanliRoad</button>
+    </div>
+    <div class="main">
+        <li class="box">
+            <p class="time">2022/1/1</p>
+            <p class="talk">Secondly, student activities play an important role in our college life. To be honest, the student Union is a good place where one can develop social skills, get his abilities trained. I take part in many student activities. For example, I’
+                m a volunteer, teaching the kids to learn to dance and write. I think it’s meaningful for everyone to give a hand to others. I can also do some jobs in the Student Union, including receiving and sending fast mail, selling papers and magazines.
+                I think they’re unforgettable and worthwhile experiences for me.</p>
+            <div>
+                <img src="./html/images/watch.svg" alt="" srcset="">
+                <img src="./html/images/d.svg" alt="" srcset="">
+                <img src="./html/images/d1.svg" alt="" srcset="">
+            </div>
+        </li>
+        <li class="box">
+            <p class="time">2022/1/1</p>
+            <p class="talk">As we know, many people favor the idea that the college life is free and comfortable, but I’d like to say it’s not true. As a matter of fact, my life in university is so busy that I wonder if my energy is enough. As to my college life, I divide
+                it into four parts, including study, student activities, library and the others.
+
+            </p>
+            <div>
+                <img src="./html/images/watch.svg" alt="Display text">
+                <img src="./html/images/d.svg" alt="" srcset="">
+                <img src="./html/images/d1.svg" alt="" srcset="">
+            </div>
+        </li>
+        <li class="box">
+            <p class="time">2022/1/1</p>
+            <p class="talk">Finally, I often do other things in my spare time. In order to alleviate parents’ burden, I often do some part-time jobs and write some articles to earn money. It helps me to be independent and improve my social skills.</p>
+            <div>
+                <img src="./html/images/watch.svg" alt="" srcset="">
+                <img src="./html/images/d.svg" alt="" srcset="">
+                <img src="./html/images/d1.svg" alt="" srcset="">
+            </div>
+        </li>
+        <li class="box">
+            <p class="time">2022/1/1</p>
+            <p class="talk">In short, my life in university is busy but valuable. You can see that study brings me knowledge, student activities improve myself, library changes my horizons, the others things make me independent. They get all my abilities trained. And
+                I see that the chance will come only if you have a prepared mind, so I’m sure that I can achieve my dreams in college life.</p>
+            <div>
+                <img src="./html/images/watch.svg" alt="" srcset="">
+                <img src="./html/images/d.svg" alt="" srcset="">
+                <img src="./html/images/d1.svg" alt="" srcset="">
+            </div>
+        </li>
+        <li class="box">
+            <p class="time">2022/1/1</p>
+            <p class="talk">when I went in university,I found my university life is different from my imagination graually. Although we have no more so many classes and homework,we need take part in a lot of activities.</p>
+            <div>
+                <img src="./html/images/watch.svg" alt="" srcset="">
+                <img src="./html/images/d.svg" alt="" srcset="">
+                <img src="./html/images/d1.svg" alt="" srcset="">
+            </div>
+        </li>
+        <li class="box">
+            <p class="time">2022/1/1</p>
+            <p class="talk">One year ago,I was eager to be a university student. Because in my mind, university life is very relaxing. We will far away from home and borden our horison. Besides we will don't need to do so much homework. The moment the college entrance
+                examination ended, I was so relaxed and pleased.</p>
+            <div>
+                <img src="./html/images/watch.svg" alt="" srcset="">
+                <img src="./html/images/d.svg" alt="" srcset="">
+                <img src="./html/images/d1.svg" alt="" srcset="">
+            </div>
+        </li>
+    </div>
+    <script src="./html/files/JUMP.js"></script>
+    <script>
+        const Box = document.getElementsByClassName('box');
+        console.log(Box[1].childNodes);
+        for (let i = 0; i < Box.length; i++) {
+
+            Box[i].childNodes[5].childNodes[1].onclick = function() {
+                if (Box[i].childNodes[3].style.display === 'none') {
+                    Box[i].childNodes[3].style.display = 'block';
+                } else {
+                    Box[i].childNodes[3].style.display = 'none';
+                }
+            }
+            Box[i].childNodes[5].childNodes[3].onclick = function() {
+                Box[i].style.fontSize = 1.7 + 'rem';
+
+            }
+            Box[i].childNodes[5].childNodes[5].onclick = function() {
+                Box[i].style.fontSize = 1.5 + 'rem';
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

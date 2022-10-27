@@ -1,0 +1,156 @@
+@import url(./index.css);
+@import url(./index1.css);
+.main {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    background-color: rgb(238, 189, 189);
+}
+
+.earyan {
+    /* transition: 10s; */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* transform: translate(-50%,-50%); */
+}
+
+.yano {
+    top: 10%;
+    left: 65%;
+}
+
+.yant {
+    top: 10%;
+    left: 5%;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(253, 51, 51);
+}
+
+.befort {
+    /* content:""; */
+    position: absolute;
+    top: 10px;
+    transform: translate(-50%, -50%);
+    left: 69%;
+    width: 35px;
+    height: 7px;
+    border-radius: 50% 50% 20% 20%;
+    background-color: rgb(253, 251, 251);
+}
+
+.beforo {
+    /* content:""; */
+    position: absolute;
+    top: 10px;
+    transform: translate(-50%, -50%);
+    left: 29%;
+    width: 35px;
+    height: 7px;
+    border-radius: 50% 50% 20% 20%;
+    background-color: rgb(255, 255, 255);
+}
+
+.ear {
+    transition: 1s;
+}
+
+.earo {
+    /* content:""; */
+    position: absolute;
+    top: 25px;
+    /* transform: translate(-50%,-50%); */
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.eart {
+    /* content:""; */
+    position: absolute;
+    top: 25px;
+    left: 60%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.mouth {
+    /* transform: 1s; */
+    transition: .5s ease;
+    /* content:""; */
+    position: absolute;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 250, 250);
+}
+
+.top:hover~.header .mouth {
+    top: 50%;
+}
+
+.right:hover~.header .mouth {
+    /* top: 50%; */
+    left: 40%;
+}
+
+.bton:hover~.header .mouth {
+    top: 70%;
+}
+
+.Left:hover~.header .mouth {
+    left: 60%;
+}
+
+.top:hover~.header .ear {
+    top: -5%;
+}
+
+.top:hover~.header .befor {
+    top: -5%;
+}
+
+.right:hover~.header .ear {
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translateX(-30%)
+}
+
+.bton:hover~.header .ear {
+    top: 30%;
+    /* transform: translate(20%,10%); */
+}
+
+.Left:hover~.header .ear {
+    transform: translateX(30%)
+}
