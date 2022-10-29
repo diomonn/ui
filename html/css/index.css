@@ -57,14 +57,14 @@ body {
     html {
         font-size: calc(18px+4*(100vw-414px)/39);
     }
-    .main {
-        width: 90%;
-    }
 }
 
 @media screen and (min-width:1000px) {
     html {
         font-size: calc(22px+5*(100vw-1200px)/39);
+    }
+    .main {
+        width: 90%;
     }
 }
 
@@ -96,7 +96,7 @@ button:hover {
 .main {
     position: relative;
     background-color: rgb(110, 171, 211, .4);
-    width: 860px;
+    width: 68.9655%;
     height: 100%;
     font-size: 1.5rem;
     display: grid;
